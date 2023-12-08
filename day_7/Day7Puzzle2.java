@@ -81,6 +81,9 @@ public class Day7Puzzle2 {
                 cardMap.put(card, 1);
         }
 
+        //Joker is wildcard
+        // If there are any jokers, find the card face with the most
+        // occurances and add the jokers for the best hand
         if(cardMap.containsKey('J') && cardMap.get('J') != 5){
             char maxCard = (char)cardMap.keySet().toArray()[0];
             int max = 0;
